@@ -1,0 +1,20 @@
+[
+  {
+    "id": "book_001",
+    "levelId": "beg_lvl_0",
+    "name": "الاللفية",
+    "coverUrl": "https://github.com/GhaziMarie/manar_thama_stu/releases/download/v1.0/cover_001.png",
+    "pdfUrl": "https://github.com/GhaziMarie/manar_thama_stu/releases/download/v1.0/book_001.pdf",
+    "isActive": 1,
+    "orderIndex": 1
+  },
+  {
+    "id": "book_002",
+    "levelId": "beg_lvl_1",
+    "name": "ورد الأمان",
+    "coverUrl": "https://github.com/GhaziMarie/manar_thama_stu/releases/download/v1.0/cover_002.png",
+    "pdfUrl": "https://github.com/GhaziMarie/manar_thama_stu/releases/download/v1.0/book_002.pdf",
+    "isActive": 1,
+    "orderIndex": 1
+  }
+]
