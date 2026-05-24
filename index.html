@@ -1,90 +1,325 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>سياسة الخصوصية | معهد منار تهامة</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        :root { --primary: #1a5f7a; --secondary: #159895; --bg: #f8f9fa; }
-        body { 
-            font-family: 'Tajawal', sans-serif; 
-            background: var(--bg); 
-            line-height: 1.8; 
-            color: #333; 
-            margin: 0; 
-            padding: 20px; /* إضافة حشو للجوانب في الشاشات الصغيرة */
+      :root {
+        --primary: #0f766e;
+        --secondary: #14b8a6;
+        --dark: #0f172a;
+        --text: #475569;
+        --bg: #f1f5f9;
+        --white: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Tajawal", sans-serif;
+        /*background:
+        linear-gradient(135deg,#0f766e 0%,#14b8a6 100%);*/
+        min-height: 100vh;
+        padding: 30px 15px;
+        color: var(--dark);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(10px);
+        border-radius: 28px;
+        padding: 45px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .header-icon {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 38px;
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 34px;
+        color: var(--dark);
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      .institute {
+        text-align: center;
+        font-size: 20px;
+        color: var(--primary);
+        font-weight: 700;
+      }
+
+      section p {
+        color: var(--text);
+        line-height: 2;
+        margin-bottom: 18px;
+        font-size: 17px;
+      }
+
+      h2 {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-right: 5px solid var(--secondary);
+        border-radius: 14px;
+        padding: 16px 18px;
+        margin: 30px 0 15px;
+        font-size: 20px;
+        color: var(--primary);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0;
+      }
+
+      ul li {
+        position: relative;
+        padding-right: 32px;
+        margin-bottom: 12px;
+        color: var(--text);
+        line-height: 1.9;
+      }
+
+      ul li::before {
+        content: "✓";
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: var(--secondary);
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      a:hover {
+        color: var(--secondary);
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 25px;
+        border-top: 1px solid #e2e8f0;
+        color: #64748b;
+        line-height: 2;
+      }
+
+      .footer p:first-child {
+        font-weight: 700;
+      }
+
+      .footer p:nth-child(2) {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 17px;
+      }
+
+      strong {
+        color: var(--primary);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 25px;
+          border-radius: 22px;
         }
-        .container { 
-            max-width: 800px; 
-            margin: 30px auto; 
-            background: #fff; 
-            padding: 40px; 
-            border-radius: 20px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+
+        h1 {
+          font-size: 28px;
         }
-        header { 
-            text-align: center; 
-            border-bottom: 2px solid #f0f0f0; 
-            padding-bottom: 20px; 
-            margin-bottom: 30px; 
+
+        .institute {
+          font-size: 18px;
         }
-        h1 { color: var(--primary); font-size: 28px; margin-bottom: 10px; }
-        h2 { 
-            color: var(--secondary); 
-            font-size: 20px; 
-            border-right: 4px solid var(--secondary); 
-            padding-right: 15px; 
-            margin-top: 30px; 
+
+        h2 {
+          font-size: 18px;
         }
-        p { font-size: 16px; color: #555; text-align: justify; }
-        .footer { 
-            text-align: center; 
-            margin-top: 40px; 
-            font-size: 14px; 
-            color: #888; 
-            border-top: 1px solid #eee; 
-            padding-top: 20px; 
+
+        section p,
+        ul li {
+          font-size: 15px;
         }
-        .highlight { color: var(--primary); font-weight: bold; }
-        
-        /* تحسين للهواتف */
-        @media (max-width: 600px) {
-            .container { padding: 20px; }
-            h1 { font-size: 22px; }
-            h2 { font-size: 18px; }
-        }
+      }
+
+      .copyright {
+        font-weight: 700;
+      }
+
+      .institute-name {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 17px;
+        margin: 8px 0;
+      }
+
+      .developer {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .phone {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #f0fdfa;
+        color: var(--primary);
+        text-decoration: none;
+        padding: 10px 10px;
+        border-radius: 50px;
+        border: 1px solid #ccfbf1;
+        font-weight: 700;
+        transition: 0.3s;
+      }
+
+      .phone:hover {
+        background: var(--primary);
+        color: white;
+        transform: translateY(-2px);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>سياسة الخصوصية</h1>
-            <p class="highlight">معهد منار تهامة للعلوم الشرعية</p>
-        </header>
+      <header>
+        <h1>سياسة الخصوصية</h1>
+        <p class="highlight">معهد منار تهامة للعلوم الشرعية</p>
+      </header>
 
-        <section>
-            <p>نحن في <strong>معهد منار تهامة للعلوم الشرعية</strong> برئاسة <strong>الشيخ محمد أحمد عاموه</strong>، نلتزم بحماية خصوصية مستخدمي تطبيقنا. توضح هذه الصفحة كيفية تعاملنا مع البيانات.</p>
+      <section>
+        <p>
+          يحرص <strong>معهد منار تهامة للعلوم الشرعية</strong> برئاسة
+          <strong>الشيخ محمد أحمد عاموه</strong>
+          على حماية خصوصية مستخدمي التطبيق واحترام بياناتهم الشخصية. وتوضح هذه
+          السياسة آلية التعامل مع المعلومات والخدمات المقدمة من خلال التطبيق.
+        </p>
 
-            <h2>1. جمع البيانات واستخدامها</h2>
-            <p>نحيطكم علماً بأن التطبيق <span class="highlight">لا يقوم بجمع أي بيانات شخصية</span> عن المستخدمين. لا نطلب تسجيل حساب، ولا نصل إلى الأسماء، أرقام الهواتف، أو المواقع الجغرافية.</p>
+        <h2>1. جمع المعلومات واستخدامها</h2>
+        <p>
+          لا يقوم التطبيق بجمع أو تخزين أو مشاركة أي بيانات شخصية خاصة
+          بالمستخدمين. كما لا يتطلب إنشاء حساب أو تسجيل دخول، ولا يطلب الوصول
+          إلى الأسماء أو أرقام الهواتف أو المواقع الجغرافية أو أي معلومات
+          تعريفية أخرى.
+        </p>
 
-            <h2>2. الصلاحيات المطلوبة</h2>
-            <p>يطلب التطبيق صلاحية الوصول إلى <strong>الإنترنت</strong> فقط من أجل مزامنة قائمة الكتب وتحميل ملفات الـ PDF. يتم تخزين هذه الملفات في الذاكرة الداخلية للتطبيق لضمان عملها دون إنترنت لاحقاً، ولا يتم الوصول إلى معرض الصور أو الملفات الشخصية للمستخدم.</p>
+        <h2>2. الأذونات والصلاحيات</h2>
+        <p>
+          يحتاج التطبيق إلى صلاحية الاتصال بالإنترنت فقط، وذلك للأغراض التالية:
+        </p>
 
-            <h2>3. خدمات الطرف الثالث</h2>
-            <p>يستخدم التطبيق خدمة <strong>GitHub</strong> لاستضافة البيانات وخدمة <strong>Firebase</strong> لإدارة الإعدادات عن بُعد. هذه الخدمات قد تجمع بيانات تقنية غير معرفة للهوية (مثل نوع الجهاز أو نظام التشغيل) لتحسين الأداء فقط.</p>
+        <ul>
+          <li>مزامنة وتحديث قائمة الكتب والمواد العلمية.</li>
+          <li>تحميل ملفات الكتب بصيغة PDF عند الحاجة.</li>
+          <li>تحديث المحتوى والإعدادات المتعلقة بالتطبيق.</li>
+        </ul>
 
-            <h2>4. حقوق الملكية</h2>
-            <p>جميع الكتب والمواد العلمية المتوفرة هي ملكية فكرية لمعهد منار تهامة، وهي متاحة للطلاب والجمهور للأغراض التعليمية غير التجارية.</p>
+        <p>
+          يتم حفظ الملفات التي يتم تحميلها داخل مساحة التخزين الخاصة بالتطبيق
+          لضمان إمكانية استخدامها دون اتصال بالإنترنت لاحقاً، ولا يتم الوصول إلى
+          الصور أو الملفات الشخصية أو أي بيانات خاصة بالمستخدم.
+        </p>
 
-            <h2>5. التواصل معنا</h2>
-            <p>إذا كان لديك أي استفسار حول سياسة الخصوصية، يمكنك التواصل مع إدارة المعهد مباشرة عبر القنوات الرسمية.</p>
-        </section>
+        <h2>3. خدمات الجهات الخارجية</h2>
+        <p>
+          قد يعتمد التطبيق على بعض الخدمات التقنية المقدمة من جهات خارجية، مثل:
+        </p>
 
-        <div class="footer">
-            جميع الحقوق محفوظة © 2026 | تطوير المهندس/ غازي مرعي
+        <ul>
+          <li>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            لاستضافة بعض البيانات والملفات.
+          </li>
+          <li>
+            <a href="https://firebase.google.com" target="_blank">Firebase</a>
+            لإدارة الإعدادات والتحديثات عن بُعد.
+          </li>
+        </ul>
+
+        <p>
+          وقد تقوم هذه الخدمات بجمع معلومات تقنية عامة وغير مُعرِّفة للهوية، مثل
+          نوع الجهاز أو إصدار نظام التشغيل أو بيانات الأداء، وذلك بهدف تحسين
+          جودة الخدمة واستقرار التطبيق.
+        </p>
+
+        <h2>4. حقوق الملكية الفكرية</h2>
+        <p>
+          جميع الكتب والمواد العلمية والمحتويات المتوفرة داخل التطبيق هي ملكية
+          فكرية لمعهد منار تهامة للعلوم الشرعية أو لأصحاب الحقوق المصرح بنشر
+          أعمالهم. وتُوفر هذه المواد للأغراض التعليمية والعلمية فقط، ولا يجوز
+          إعادة نشرها أو استغلالها تجارياً دون الحصول على إذن مسبق من الجهات
+          المختصة.
+        </p>
+
+        <h2>5. حماية البيانات</h2>
+        <p>
+          نلتزم باتخاذ الإجراءات المناسبة للحفاظ على أمن التطبيق وحماية المحتوى
+          المتاح من أي استخدام غير مصرح به، مع الحرص على توفير بيئة آمنة وموثوقة
+          للمستخدمين.
+        </p>
+
+        <h2>6. التعديلات على سياسة الخصوصية</h2>
+        <p>
+          يحتفظ المعهد بحق تحديث أو تعديل سياسة الخصوصية عند الحاجة. وسيتم نشر
+          أي تحديثات داخل التطبيق أو عبر القنوات الرسمية للمعهد، ويُعد استمرار
+          استخدام التطبيق موافقةً على التعديلات المحدثة.
+        </p>
+
+        <h2>7. التواصل والاستفسارات</h2>
+        <p>
+          في حال وجود أي استفسار أو ملاحظة تتعلق بسياسة الخصوصية أو باستخدام
+          التطبيق، يرجى التواصل مع إدارة المعهد عبر القنوات الرسمية المعتمدة.
+        </p>
+      </section>
+
+      <div class="footer">
+        <p class="copyright">جميع الحقوق محفوظة © 2026</p>
+
+        <p class="institute-name">معهد منار تهامة للعلوم الشرعية</p>
+
+        <div class="developer">
+          <span>تطوير: المهندس/ غازي مرعي</span>
+
+          <a href="tel:+967773672969" class="phone"> 📞 +967 773 672 969 </a>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
